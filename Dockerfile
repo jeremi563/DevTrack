@@ -24,8 +24,10 @@ COPY --chown=app:app . .
 # Set environment variable
 ENV API_URL=http://api.myapp.com
 
+
 # Expose the Vite development server port
 EXPOSE 5173
+
 
 # Start Vite and allow access from outside the container
 CMD ["npm", "start", "--", "--host", "0.0.0.0"]
